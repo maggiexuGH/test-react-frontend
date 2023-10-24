@@ -1,0 +1,16 @@
+id: db5627b7-fedc-4901-b0d5-aa035f87c58d
+timestamp: 2023-10-24T16:50:46Z
+username: guest
+source: TAP-GUI
+accelerator:
+  name: react-frontend
+  source:
+    image: us-docker.pkg.dev/tap-sandbox-dev/tap-bits/tap-packages@sha256:1b734b3e63d901974d4d42a7d185c331edfefb4c3ae1aaf2308665eec49321bd
+fragments:
+  - name: tap-workload
+    source:
+      image: us-docker.pkg.dev/tap-sandbox-dev/tap-bits/tap-packages@sha256:d9c7d8d322f0740666ba7c752a9174d1eb66274338c4f0e211edb1d448104c2a
+options:
+  artifactId: test-react-frontend
+  backendService: customer-profile-backend.namespace
+  projectName: test-react-frontend
